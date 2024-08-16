@@ -200,9 +200,11 @@ public class BinaryTreeTraversalIteration {
 			stack.push(h);
 			while (!stack.isEmpty()) {
 				TreeNode cur = stack.peek();
+				// 左子树有 且 左子树没有遍历过
 				if (cur.left != null && h != cur.left && h != cur.right) {
 					stack.push(cur.left);
-				} else if (cur.right != null && h != cur.right) {
+				} // 右子树有 且 右子树没有遍历过
+				else if (cur.right != null && h != cur.right) {
 					stack.push(cur.right);
 				} else {
 					ans.add(cur.val);

@@ -156,7 +156,6 @@ public class QueueStackAndCircularQueue {
 	// 设计循环队列
 	// 测试链接 : https://leetcode.cn/problems/design-circular-queue/
 	class MyCircularQueue {
-
 		public int[] queue;
 
 		public int l, r, size, limit;
@@ -220,7 +219,6 @@ public class QueueStackAndCircularQueue {
 		public boolean isFull() {
 			return size == limit;
 		}
-
 	}
 
 }

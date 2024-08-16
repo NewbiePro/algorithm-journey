@@ -1,5 +1,6 @@
 package class038;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 // 字符串的全部子序列
@@ -53,6 +54,10 @@ public class Code01_Subsequences {
 			f2(s, i + 1, path, size + 1, set);
 			f2(s, i + 1, path, size, set);
 		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println(Arrays.toString(generatePermutation2("ab")));
 	}
 
 }

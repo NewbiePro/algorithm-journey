@@ -99,6 +99,7 @@ public class Code06_SortList {
 				l2 = l2.next;
 			}
 		}
+
 		if (l1 != null) {
 			pre.next = l1;
 			end = r1;

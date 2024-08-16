@@ -19,7 +19,7 @@ public class Code03_Near2power {
 	}
 
 	public static void main(String[] args) {
-		int number = 100;
+		int number = 8;
 		System.out.println(near2power(number));
 	}
 
