@@ -1,6 +1,7 @@
-package class139;
+package class145;
 
-// 测试链接 : https://www.luogu.com.cn/problem/P1082
+// 游戏
+// 测试链接 : https://www.luogu.com.cn/problem/P6478
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,32 +12,10 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-public class Code04 {
-
-	// 扩展欧几里得算法
-	public static long d, x, y;
-
-	public static void exgcd(long a, long b) {
-		if (b == 0) {
-			d = a;
-			x = 1;
-			y = 0;
-		} else {
-			exgcd(b, a % b);
-			long tmp = x;
-			x = y;
-			y = tmp - a / b * y;
-		}
-	}
+public class Code05_Game {
 
 	public static void main(String[] args) throws IOException {
-		Kattio io = new Kattio();
-		long a = io.nextLong();
-		long b = io.nextLong();
-		exgcd(a, b);
-		io.println((x % b + b) % b);
-		io.flush();
-		io.close();
+
 	}
 
 	// Kattio类IO效率很好，但还是不如StreamTokenizer
